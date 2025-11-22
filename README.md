@@ -24,3 +24,6 @@ All tasks are stored using Local Storage, ensuring that your data remains saved 
 🎯 Purpose
 
 This project demonstrates basic CRUD operations in JavaScript along with DOM manipulation and persistent storage using Local Storage.
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/579c2129-c7aa-4384-89ef-ed6715ced86f" />
+
