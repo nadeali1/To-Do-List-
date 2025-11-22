@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg,
+            #8052ec,
+            #d161ff);
+}
+
+.container {
+    background-color: rgb(232, 238, 238);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 500px;
+    margin-right: 500px;
+    border-radius: 20px;
+}
+
+.input-container {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    padding: 20px;
+}
+
+.input-container input {
+    border: none;
+    outline: none;
+    padding: 12px;
+    margin-block: 12px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.input-container input[type="text"] {
+    width: 70%;
+
+}
+
+.input-container input[type="button"] {
+    background: #d161ff;
+    color: white;
+    font-weight: 700;
+    /* width: 20%; */
+    margin-left: 8px;
+    cursor: pointer;
+    padding: 12px 24px;
+}
+
+.input-container input[type="button"]:hover {
+    background: #b54fdd;
+}
+
+ul {
+    width: 100%;
+    max-width: 450px;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; */
+}
+
+ul li {
+    list-style: none;
+    cursor: pointer;
+    border: .125px solid #a19f9f;
+    border-radius: 8px;
+    margin-block-end: 12px;
+    padding: 6px 12px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.5s;
+}
+
+ul li:hover {
+    background-color: #cbcaca;
+}
+
+
+ul li p {
+    flex-grow: 1;
+    padding: 2px;
+}
+
+.btns {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background-color: #d161ff;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 6px;
+    display: flex;
+    margin-right: 5px;
+    border-radius: 5px
+}
+
+.btns:hover {
+    background-color: #b54fdd;
+
+}
+
+.completed {
+    background-color: #d4ffd4;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 90%;
+        margin: 30px auto;
+        padding: 15px;
+    }
+
+    .input-container {
+        padding: 10px;
+    }
+
+    .input-container input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .input-container input[type="button"] {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    ul {
+        max-width: 100%;
+    }
+
+    ul li {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px;
+        gap: 8px;
+    }
+
+    .btns {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+
+@media (min-width: 600px) and (max-width: 992px) {
+
+    .container {
+        width: 85%;
+        max-width: 700px;
+        margin: 50px auto;
+        padding: 20px;
+    }
+
+    .input-container input[type="text"] {
+        width: 75%;
+    }
+
+    ul {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .container {
+        width: 60%;
+        max-width: 800px;
+        margin: 100px auto;
+        padding: 25px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        width: 50%;
+        max-width: 900px;
+        margin: 120px auto;
+        padding: 30px;
+    }
+}
+
+
+/* @media (min-width: 1400px) {
+    .container {
+        margin-left: 600px;
+        margin-right: 600px;
+        padding: 30px;
+    }
+
+    ul li {
+        padding: 15px;
+    }
+
+    .btns {
+        padding: 8px 12px;
+    }
+} */
